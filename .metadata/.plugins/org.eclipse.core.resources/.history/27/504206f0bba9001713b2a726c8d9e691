@@ -1,0 +1,11 @@
+public class Impresora extends Singleton<Impresora> {
+
+	private Impresora() {
+	}
+
+	@Override
+	protected Impresora create() {
+		return new Impresora();
+	}
+
+}

@@ -1,0 +1,10 @@
+
+public class Impresora extends Singleton {
+
+	@Override
+	protected Object create() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}
