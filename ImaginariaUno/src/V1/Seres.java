@@ -7,9 +7,10 @@ public class Seres extends Thread {
 	Fuente fuente;
 	String nombre;
 
-	public Seres(Fuente fuente, String nombre) {
+	public Seres(Fuente fuente, String nombre,int vida) {
 		this.fuente = fuente;
 		this.nombre = nombre;
+		this.vida=vida;
 	}
 
 	public int getVida() {
@@ -45,7 +46,6 @@ public class Seres extends Thread {
 
 	private void beber() {
 		int alimento=fuente.beber();
-
 		if (alimento> 0) {
 			tamano+=alimento;
 			System.out.println("bebiendo");

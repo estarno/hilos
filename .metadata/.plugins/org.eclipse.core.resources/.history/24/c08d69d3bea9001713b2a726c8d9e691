@@ -1,0 +1,29 @@
+package test;
+
+import static org.junit.Assert.*;
+
+import org.junit.Ignore;
+import org.junit.Test;
+
+import V1.Fuente;
+
+public class FuenteTest {
+
+	@Test
+	public void testGetVida(){
+		Fuente instancia=new Fuente(10);
+		instancia.start();
+		try {
+			Thread.sleep(90);
+		} catch (InterruptedException e) {
+			e.printStackTrace();
+		}
+		assertEquals(10, instancia.getVida());
+	}
+	
+	@Ignore
+	public void testBeber() {
+		fail("Not yet implemented");
+	}
+
+}
