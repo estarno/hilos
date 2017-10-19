@@ -1,5 +1,0 @@
-package generica;
-
-public class Principal {
-	Impresora impresoraColor;
-}

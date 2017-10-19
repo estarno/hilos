@@ -1,9 +1,0 @@
-
-public class Impresora extends Singleton<Impresora> {
-
-	@Override
-	protected Impresora create() {
-		return new Impresora();
-	}
-
-}
