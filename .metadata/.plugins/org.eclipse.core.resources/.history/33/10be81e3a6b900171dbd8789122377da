@@ -19,11 +19,7 @@ public class Cola {
 	
 	public Seres consumirTurno() {
 		if(paraCola.size()>0)
-			try {
-				return paraCola.removeFirst();
-			} catch (Exception e) {
-				return null;
-			}
+			return paraCola.removeFirst();
 		else
 			return null;
 

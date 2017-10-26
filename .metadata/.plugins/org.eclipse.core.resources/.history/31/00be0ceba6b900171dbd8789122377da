@@ -22,7 +22,8 @@ public class Cola {
 			try {
 				return paraCola.removeFirst();
 			} catch (Exception e) {
-				return null;
+				// TODO Auto-generated catch block
+				e.printStackTrace();
 			}
 		else
 			return null;

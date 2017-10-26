@@ -28,7 +28,6 @@ public class Seres extends Thread {
 	public void run() {
 		while (tamano < esperanzaDeVida) {
 			if (turno) {
-				System.out.println(getName()+" pido entrar");
 				miFila.solicitarPuesto(this);
 				turno = false;
 			}

@@ -10,6 +10,5 @@ public class Mundo {
 			habitantes.add(new Seres(Bautizo.bautizarHabitante()));
 			habitantes.get(i).start();
 		}
-		while(true){}
 	}
 }

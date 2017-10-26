@@ -12,9 +12,8 @@ public class Seres extends Thread {
 	// Constructores
 	public Seres(String nombre) {
 		super(nombre);
-		esperanzaDeVida = (int) ((Math.random() * Constantes.VIDA_MAX) + 3);
+		esperanzaDeVida = (int) ((Math.random() * Constantes.VIDA_MAX) + 15);
 		miFila = ColaSagrada.getInstance();
-		System.out.println("nazco "+nombre+" con esperanza de "+esperanzaDeVida);
 	}
 
 	// Metodos
@@ -28,7 +27,6 @@ public class Seres extends Thread {
 	public void run() {
 		while (tamano < esperanzaDeVida) {
 			if (turno) {
-				System.out.println(getName()+" pido entrar");
 				miFila.solicitarPuesto(this);
 				turno = false;
 			}

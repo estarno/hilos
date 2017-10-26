@@ -25,7 +25,7 @@ public class Lago {
 	public synchronized void beber(){
 		while(vida==0)
 			try {
-//				System.out.println("esperando");
+				System.out.println("esperando");
 				wait();
 			} catch (InterruptedException e) {
 				e.printStackTrace();
